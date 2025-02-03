@@ -13,51 +13,23 @@ import Link from "next/link";
 const slides = [
     {
         id: 1,
-        image: "/high-view-toy-model-house-keys.jpg",
-        title: "Первый слайд",
-        description: "Описание первого слайда. Это текст для демонстрации.",
-        buttonText: "Подробнее",
-        buttonLink: "/about",
+        image: "/pencil-right-side-with-white-background-Photoroom6.png",
+        title: "Список граждан, восстановленных в очереди за 2019-2023 г.г.",
     },
     {
         id: 2,
-        image: "/high-view-toy-model-house-keys1.jpg",
-        title: "Второй слайд",
-        description: "Описание второго слайда. Здесь еще больше информации.",
-        buttonText: "Читать",
-        buttonLink: "/news",
+        image: "/pencil-right-side-with-white-background-Photoroom6.png",
+        title: "Список очередников 2023 г.",
     },
     {
         id: 3,
-        image: "/high-view-toy-model-house-keys2.jpg",
-        title: "Третий слайд",
-        description: "Заключительное описание слайда с важными деталями.",
-        buttonText: "Узнать больше",
-        buttonLink: "/contact",
+        image: "/pencil-right-side-with-white-background-Photoroom6.png",
+        title: "Списки состоящих в очереди на жилье",
     },
     {
         id: 4,
-        image: "/high-view-toy-model-house-keys.jpg",
-        title: "Первый слайд",
-        description: "Описание первого слайда. Это текст для демонстрации.",
-        buttonText: "Подробнее",
-        buttonLink: "/about",
-    },
-    {
-        id: 5,
-        image: "/high-view-toy-model-house-keys1.jpg",
-        title: "Второй слайд",
-        description: "Описание второго слайда. Здесь еще больше информации.",
-        buttonText: "Читать",
-        buttonLink: "/news",
-    },
-    {
-        id: 6,
-        image: "/high-view-toy-model-house-keys2.jpg",
-        title: "Третий слайд",
-        description: "Заключительное описание слайда с важными деталями.",
-        buttonText: "Узнать больше",
-        buttonLink: "/contact",
+        image: "/pencil-right-side-with-white-background-Photoroom6.png",
+        title: "Список граждан, восстановленных в очереди за 2019-2023 г.г.",
     },
 ];
 
@@ -86,7 +58,7 @@ const Slider= () => {
                     navigation={{prevEl: prevRef.current, nextEl: nextRef.current}}
                     pagination={{clickable: true}}
                     // autoplay={{delay: 4000}}
-                    slidesPerView={4}
+                    slidesPerView={3}
                     spaceBetween='60'
                     // onInit={(swiper) => {
                     //     if (prevRef.current && nextRef.current) {
@@ -108,16 +80,8 @@ const Slider= () => {
                                 objectFit="cover"
                                 className="w-full"
                             />
-                            <div
-                                className="mt-[50px]">
-                                <h2 className="text-xl font-normal mb-[30px]">{slide.title}</h2>
-                                <p className="text-base mb-[30px]">{slide.description}</p>
-                                <Link href={slide.buttonLink}>
-                                    <button
-                                        className="text-xl font-normal hover:text-[#4aa3a8] border-b border-[#3B3E4F] text-left pb-2.5 w-full">
-                                        {slide.buttonText}
-                                    </button>
-                                </Link>
+                            <div className="text-[#E7EFEF] relative w-[340px] h-[320px] overflow-hidden group flex flex-col justify-between items-center p-10" style={{ background: 'linear-gradient(to bottom, transparent 50%, #FAFCFD 50%)' }}>
+                                <p className="text-xl font-normal mb-[30px]">{slide.title}</p>
                             </div>
                         </SwiperSlide>
                     ))}

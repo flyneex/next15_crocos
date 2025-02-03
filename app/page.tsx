@@ -4,6 +4,8 @@ import Hero from "@/components/hero/Hero";
 import News from "@/components/news/News";
 import Footer from "@/components/footer/Footer";
 import Programs from "@/components/programs/Programs";
+import Online from "@/components/online/Online";
+import Info from "@/components/info/Info";
 
 export default function Home() {
     return (
@@ -12,6 +14,8 @@ export default function Home() {
             <Hero/>
             <News />
             <Programs/>
+            <Online/>
+            <Info/>
             <Footer/>
             <div
                 className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">

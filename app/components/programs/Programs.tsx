@@ -6,7 +6,7 @@ import Slider from "@/components/Slider/Slider";
 const Programs = () => {
     return (
         <>
-            <div className='max-w-[1720px] m-auto'>
+            <div className='max-w-[1720px] m-auto mb-[110px]'>
                 <div className='flex justify-between items-center pb-[91px]'>
                     <h3 className='text-5xl font-normal leading-[43px] text-[#3B3E4F]'>Жилищные программы</h3>
                     <Link href='#'>
