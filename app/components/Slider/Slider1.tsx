@@ -71,17 +71,9 @@ const Slider= () => {
                 >
                     {slides.map((slide) => (
                         <SwiperSlide key={slide.id} className="relative h-[440px]">
-                            <Image
-                                src={slide.image}
-                                alt={slide.title}
-                                // layout="fill"
-                                width={1200}
-                                height={440}
-                                objectFit="cover"
-                                className="w-full"
-                            />
-                            <div className="text-[#E7EFEF] relative w-[340px] h-[320px] overflow-hidden group flex flex-col justify-between items-center p-10" style={{ background: 'linear-gradient(to bottom, transparent 50%, #FAFCFD 50%)' }}>
-                                <p className="text-xl font-normal mb-[30px]">{slide.title}</p>
+                            <div className="text-[#E7EFEF] relative h-[320px] overflow-hidden group flex flex-col justify-between items-center p-10" style={{ background: 'linear-gradient(to bottom, transparent 50%, #FAFCFD 50%)' }}>
+                                <img className='mb-[22px]' src={slide.image} alt={slide.title}/>
+                                <p className="text-base font-normal mb-[30px] text-[#070A18] text-center">{slide.title}</p>
                             </div>
                         </SwiperSlide>
                     ))}

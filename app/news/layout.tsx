@@ -1,15 +1,15 @@
-import React, {PropsWithChildren} from 'react';
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import Footer from '@/components/footer/Footer'
+import Header from '@/components/header/Header'
+import React, {PropsWithChildren} from 'react'
 
 const Layout: React.FC<PropsWithChildren<{}>> = ({children}) => {
-    return (
-        <div>
-            <Header/>
-            {children}
-            <Footer/>
-        </div>
-    );
-};
+	return (
+		<div>
+			<Header />
+			{children}
+			<Footer />
+		</div>
+	)
+}
 
-export default Layout;
+export default Layout
